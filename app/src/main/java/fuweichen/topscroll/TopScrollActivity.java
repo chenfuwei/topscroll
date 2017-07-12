@@ -20,6 +20,9 @@ public class TopScrollActivity extends AppCompatActivity implements AppBarLayout
     private View payMaskView;
 
     private int mMaskColor;
+
+    private ScrollingParentLinearLayout scrollingparent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +36,8 @@ public class TopScrollActivity extends AppCompatActivity implements AppBarLayout
         collaspeView = findViewById(R.id.collaspe_top_view);
         collaspeMaskView = findViewById(v_collapse_mask);
         payMaskView = findViewById(v_pay_mask);
-
+        scrollingparent = (ScrollingParentLinearLayout)findViewById(R.id.scrollingparent);
+        scrollingparent.setNestedScrollingEnabled(true);
     }
 
     @Override

@@ -57,25 +57,48 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <android.support.v4.widget.NestedScrollView
-        android:layout_height="match_parent"
+    <fuweichen.topscroll.ScrollingParentLinearLayout
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:layout_width="match_parent"
-        android:id="@+id/nestedScrollView">
+        android:layout_height="match_parent"
+        android:id="@+id/scrollingparent"
+        android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:orientation="vertical"
-            android:layout_height="match_parent">
-            <TextView
-                android:layout_width="match_parent"
-                android:text="埃里克森的发达国家卡顿反"
-                android:layout_height="1000dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:text="破地方提高很多看国际化"
-                android:layout_height="1000dp" />
+            android:layout_height="@dimen/scroll_height">
+            <android.support.v4.widget.NestedScrollView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="alskjdflakjdfsglskdfjglksdf阿萨德覅开个价拉克丝阿里看到发送跟机生当复来归控件市领导反馈给乐山大佛g"/>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
         </LinearLayout>
-    </android.support.v4.widget.NestedScrollView>
+        <android.support.v4.widget.NestedScrollView
+            android:layout_height="match_parent"
 
+            android:layout_width="match_parent"
+            android:id="@+id/nestedScrollView">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="埃里克森的发达国家卡顿反"
+                    android:layout_height="1000dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="破地方提高很多看国际化"
+                    android:layout_height="1000dp" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </fuweichen.topscroll.ScrollingParentLinearLayout>
 </android.support.design.widget.CoordinatorLayout>
